@@ -1,61 +1,120 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laundry Express - Simple ERP Laundry Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Laundry Express is a Laravel-based ERP system designed specifically for managing laundry service operations. It helps streamline customer management, transaction handling, and status tracking within a responsive and user-friendly interface. Built for small-to-medium laundry businesses, Laundry Express aims to improve operational efficiency and customer satisfaction.
 
-## About Laravel
+[![My Skills](https://skillicons.dev/icons?i=laravel,php,vite,bootstrap,mysql,vscode,windows)](https://skillicons.dev)
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Dashboard**: 
+  - Displays laundry statistics, recent transactions, and key performance indicators.
+  
+- **Customer Management**:
+  - Add, edit, and delete customer data.
+  - Add, edit, and delete service.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Laundry Transactions**:
+    - Create, update, or delete laundry orders.
+    - Track order status (e.g., new, washed, ready, delivered).
+    - Manage order types (e.g., regular, express).
+    
+- **Payment Handling**:
+    - Add and confirm payments.
+    - View transaction summaries and receipts.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Responsive Design**:
+  - Fully functional on both desktop and mobile devices.
 
-## Learning Laravel
+## Technologies Used
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Frontend**: HTML, CSS, JavaScript (with Bootstrap framework).
+- **Backend**: PHP with Laravel framework.
+- **Database**: MySQL.
+- **Storage**: Laravel Storage for image and file handling.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Getting Started
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Prerequisites
 
-## Laravel Sponsors
+Ensure you have the following installed on your system:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- PHP (>=8.1)
+- Composer
+- Node.js and npm
+- MySQL
 
-### Premium Partners
+### Installation
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/username/LaundryExpress.git
+   cd LaundryExpress
+   ```
 
-## Contributing
+2. Install dependencies:
+   ```bash
+   composer install
+   npm install
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. Copy `.env.example` to `.env` and configure your environment variables:
+   ```bash
+   cp .env.example .env
+   ```
 
-## Code of Conduct
+4. Generate an application key:
+   ```bash
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. Create a symbolic link for storage:
+   ```bash
+   php artisan storage:link
+   ```
 
-## Security Vulnerabilities
+6. Build assets:
+   ```bash
+   npm run dev
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+7. Start the development server:
+   ```bash
+   php artisan serve
+   ```
 
-## License
+Access the application at `http://localhost:8000`.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## Screenshots
+
+### Admin Panel:
+#### 1. Dashboard  
+![image](https://github.com/user-attachments/assets/e1435537-c56f-4f96-88b5-e67f516c482f)
+
+*Overview of recent laundry orders and statistics.*  
+
+#### 2. Pelanggan
+![image](https://github.com/user-attachments/assets/fcd7d4de-d788-4afa-9a64-de53e4f53b84)
+
+*Interface to add, edit, or delete customer data.*  
+
+#### 3. Layanan
+![image](https://github.com/user-attachments/assets/ae2d2277-8642-4d5e-b9cb-5f2af9d915e5)
+
+*Manage laundry service options such as regular, express, and their respective prices.*  
+
+#### 4. Transaksi
+![image](https://github.com/user-attachments/assets/d988e26a-daa3-4f0d-92d8-ba5edbef3149)
+
+*Record transactions, track laundry status, and manage the cleaning process.*  
+
+#### 5. Pembayaran
+![image](https://github.com/user-attachments/assets/90967e0f-1f03-4853-bb43-c5c45ebcd959)
+
+*View payment details and print transaction receipts.*  
+
+#### 6. Laporan
+![image](https://github.com/user-attachments/assets/7025258b-d861-49b9-ac62-d9a5b8073039)
+
+*Display transaction reports, revenue summaries, and customer data recaps.*  
+---
