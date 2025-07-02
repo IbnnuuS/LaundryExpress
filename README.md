@@ -93,12 +93,12 @@ Access the application at `http://localhost:8000`.
 
 *Overview of recent laundry orders and statistics.*  
 
-#### 2. Pelanggan
+#### 2. Customer
 ![image](https://github.com/user-attachments/assets/fcd7d4de-d788-4afa-9a64-de53e4f53b84)
 
 *Interface to add, edit, or delete customer data.*  
 
-#### 3. Layanan
+#### 3. Service
 ![image](https://github.com/user-attachments/assets/ae2d2277-8642-4d5e-b9cb-5f2af9d915e5)
 
 *Manage laundry service options such as regular, express, and their respective prices.*  
@@ -108,13 +108,14 @@ Access the application at `http://localhost:8000`.
 
 *Record transactions, track laundry status, and manage the cleaning process.*  
 
-#### 5. Pembayaran
+#### 5. Transaction
 ![image](https://github.com/user-attachments/assets/90967e0f-1f03-4853-bb43-c5c45ebcd959)
 
 *View payment details and print transaction receipts.*  
 
-#### 6. Laporan
+#### 6. Report
 ![image](https://github.com/user-attachments/assets/7025258b-d861-49b9-ac62-d9a5b8073039)
 
 *Display transaction reports, revenue summaries, and customer data recaps.*  
+
 ---
